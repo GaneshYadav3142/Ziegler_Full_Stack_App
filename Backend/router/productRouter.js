@@ -5,18 +5,24 @@ const productRouter=express.Router()
 
 productRouter.post("/add", async(req, res)=>{
      
-     const {image,name,quantity,price, seller,shippingDate}=req.body
+     const {image,name,quantity,price,shippingDate}=req.body
      const sellerID=req.body.userID
+     const companyName=req.body.companyName
      try {
+      if(image==="" || name===""){
+        res.json("Provide the details")
+      }
+      else{
          const product=await productModel.findOne({name})
          if(product){
             res.status(400).send("Product already Already Exist")
          }
          else{
-            const productAdd=await productModel.create({image,name,quantity,price,seller,shippingDate,sellerID})
+            const productAdd=await productModel.create({image,name,quantity,price,seller:companyName,shippingDate,sellerID})
             productAdd.save()
             res.status(200).send("Product added Successfully")
          }
+     }
      } catch (error) {
         res.status(400).send({error:"error"})
      }
@@ -35,7 +41,7 @@ productRouter.get("/", async (req, res) => {
             res.status(200).send(queryProducts)
         }
         else{
-            res.status(400).send({"msg":"No employee found of that deparment"})
+            res.status(400).send({"msg":"No product found of that Seller"})
         } 
     }
     else {

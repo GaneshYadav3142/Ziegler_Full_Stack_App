@@ -12,6 +12,7 @@ if(token){
             if(decode.companyName){
                 req.body.companyName=decode.companyName
             }
+         
             next()
         }
         else{
