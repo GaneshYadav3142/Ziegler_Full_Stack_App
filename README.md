@@ -39,7 +39,7 @@ The frontend of the application is built using React.js. To run the frontend dev
 ## Using the App
 
 1. Go on and Register Yourself or otherwise if you are previosly register  login yourself
-![Register Page](./myapp/src/Assets/signup.jpg)
+![Register Page](./FrontEnd/myapp/src/Assests/signup.jpg)
 
-![Login Page](./myapp/src/Assets/login.jpg)
+![Login Page](./FrontEnd/myapp/src/Assests/login.jpg)
 
