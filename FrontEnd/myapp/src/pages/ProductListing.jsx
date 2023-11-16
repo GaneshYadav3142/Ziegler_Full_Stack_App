@@ -68,7 +68,7 @@ export const ProductListing = () => {
     useEffect(() => {
      
       fetchProducts();
-    }, []);
+    }, [seller]);
   
    
   

@@ -43,7 +43,7 @@ export const Checkout = () => {
           <input type="text" id="zipCode" name="zipCode" value={shippingDetails.zipCode} onChange={handleInputChange} />
         
           <label htmlFor="carddetails">Card Details:</label>
-          <input type="password" id="carddetails" name="carddetails" value={shippingDetails.cardDetails} onChange={handleInputChange} />
+          <input type="password" id="carddetails" name="cardDetails" value={shippingDetails.cardDetails} onChange={handleInputChange} />
         
         </form>
       </div>
