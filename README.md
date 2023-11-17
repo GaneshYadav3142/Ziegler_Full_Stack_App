@@ -1,9 +1,5 @@
 # Ziegler_Full_Stack_App
 
-# Alemeno_Assesment-Front_end
-
-# LMS Web Application README
-
 This is small Trading  web application consists of a frontend and a backend.This web application is full responsive on all the Devices such as Large, Medium and Small Screens Below are instructions on how to run each part of the application.
 
 ## Backend
